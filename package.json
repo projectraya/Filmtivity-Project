@@ -1,0 +1,12 @@
+{
+  "name": "filmtivity-project",
+  "version": "1.0.0",
+  "description": "Filmtivity is a website, made with a movie database, similar to IMDB.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
