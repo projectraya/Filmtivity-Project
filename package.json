@@ -1,15 +1,21 @@
 {
-  "name": "filmtivity-project",
-  "version": "1.0.0",
+  "name": "demo",
+  "version": "1.1.1",
   "description": "Filmtivity is a website, made with a movie database, similar to IMDB.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "r.m",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.21.2"
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.3",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.2"
   }
 }
