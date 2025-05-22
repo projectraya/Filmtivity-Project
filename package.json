@@ -1,10 +1,12 @@
 {
-  "name": "demo",
+  "name": "project-filmtivity",
   "version": "1.1.1",
   "description": "Filmtivity is a website, made with a movie database, similar to IMDB.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "r.m",

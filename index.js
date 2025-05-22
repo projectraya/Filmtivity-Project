@@ -23,11 +23,18 @@ mongoose.connect(process.env.MONGODB_URI)
         console.error('MongoDB connection error:', err);
     });
 
-app.engine('handlebars', engine());
+app.engine('hbs', engine({
+    extname: '.hbs',
+    defaultLayout: 'main',
+    layoutsDir: join(__dirname, 'views/layouts'),
+    partialsDir: join(__dirname, 'views/partials')
+}));
+
 app.set('view engine', 'handlebars');
 app.set('views', join(__dirname, 'views'));
 app.use(express.static(join(__dirname, 'static')));
 app.use(express.urlencoded({extended: true}));
+
 app.use(express.json());
 app.use(cookieParser());
 
